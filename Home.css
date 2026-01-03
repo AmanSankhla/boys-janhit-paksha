@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body {
+    background: #f4f6f8;
+    padding: 15px;
+}
+
+/* Top section */
+h1 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 26px;
+    color: #f58220;
+    margin-left: 10px;
+}
+
+/* Small logo image */
+body > img:first-of-type {
+    width: 55px;
+    vertical-align: middle;
+}
+
+/* Divider */
+hr {
+    margin: 15px 0;
+    border: none;
+    border-top: 2px solid #ddd;
+}
+
+/* Navigation links */
+a {
+    display: inline-block;
+    margin: 8px 6px;
+    padding: 10px 14px;
+    background: #ffffff;
+    color: #333;
+    text-decoration: none;          /* underline removed */
+    border-radius: 6px;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Hover effect */
+a:hover {
+    background: #f58220;
+    color: #fff;
+}
+
+/* Gallery section (last images) */
+body > img:not(:first-of-type) {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px;
+    flex-shrink: 0;
+}
+
+/* Swipe container effect */
+body {
+    overflow-x: hidden;
+}
+
+body::after {
+    content: "";
+    display: block;
+    height: 20px;
+}
+
+/* Make gallery swipeable */
+body > img:nth-of-type(2) {
+    margin-top: 20px;
+}
+
+body > img:not(:first-of-type) {
+    display: inline-block;
+}
+
+/* Mobile swipe */
+@media (max-width: 768px) {
+    body {
+        white-space: nowrap;
+    }
+
+    h1, hr, a {
+        white-space: normal;
+    }
+}

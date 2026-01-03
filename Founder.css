@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== PAGE BACKGROUND ===== */
+body {
+    background: #f4f6f8;
+    padding: 15px;
+}
+
+/* ===== HEADER ===== */
+h1 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 26px;
+    color: #f58220;
+    margin-left: 10px;
+}
+
+.logo {
+    width: 45px;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* ===== NAVBAR ===== */
+div {
+    margin-top: 15px;
+}
+
+div a {
+    display: inline-block;
+    margin: 6px;
+    padding: 10px 14px;
+    background: #ffffff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+div a:hover {
+    background: #f58220;
+    color: #ffffff;
+}
+
+/* ===== DIVIDER ===== */
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 2px solid #ddd;
+}
+
+/* ===== PAGE TITLE ===== */
+h2 {
+    font-size: 24px;
+    color: #1a7f37;
+    margin-bottom: 10px;
+}
+
+/* ===== FOUNDER NAME ===== */
+h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* ===== FOUNDER DESCRIPTION ===== */
+p {
+    max-width: 750px;
+    background: #ffffff;
+    padding: 18px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* ===== FOUNDER IMAGE ===== */
+img[alt=""] {
+    display: block;
+    margin-top: 20px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    img[alt=""] {
+        width: 200px;
+    }
+}

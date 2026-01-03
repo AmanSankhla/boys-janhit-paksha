@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== PAGE BACKGROUND ===== */
+body {
+    background: #f4f6f8;
+    padding: 15px;
+}
+
+/* ===== HEADER ===== */
+h1 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 26px;
+    color: #f58220;
+    margin-left: 10px;
+}
+
+.logo {
+    width: 45px;
+    vertical-align: middle;
+}
+
+/* ===== NAVIGATION ===== */
+div {
+    margin-top: 15px;
+}
+
+div a {
+    display: inline-block;
+    margin: 6px;
+    padding: 10px 14px;
+    background: #ffffff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+div a:hover {
+    background: #f58220;
+    color: #fff;
+}
+
+/* ===== DIVIDER ===== */
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 2px solid #ddd;
+}
+
+/* ===== PAGE TITLE ===== */
+h2 {
+    font-size: 22px;
+    color: #1a7f37;
+    margin-bottom: 15px;
+}
+
+/* ========================= */
+/* 🔥 MEMORY GALLERY MAGIC 🔥 */
+/* ========================= */
+
+/* Every image */
+img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-right: 10px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+/* Each group = horizontal swipe */
+img + img {
+    display: inline-block;
+}
+
+/* Line break creates NEW swipe group */
+br + br {
+    display: block;
+    margin: 20px 0;
+}
+
+/* Make each group swipeable */
+body {
+    overflow-x: hidden;
+}
+
+img {
+    display: inline-block;
+}
+
+img:first-of-type,
+br + img {
+    margin-left: 0;
+}
+
+/* Horizontal scrolling */
+br {
+    display: block;
+    width: 100%;
+}
+
+/* Mobile swipe */
+@media (max-width: 768px) {
+    body {
+        white-space: nowrap;
+    }
+
+    h1, h2, p, div, hr {
+        white-space: normal;
+    }
+
+    img {
+        width: 180px;
+        height: 120px;
+    }
+}

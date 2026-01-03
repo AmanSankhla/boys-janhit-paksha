@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background (same as home) */
+body {
+    background: #f4f6f8;
+    padding: 15px;
+}
+
+/* Logo image */
+
+body > img:first-of-type {
+    width: 55px;
+    vertical-align: middle;
+}
+
+/* Site title */
+h1 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 26px;
+    color: #f58220;
+    margin-left: 10px;
+}
+
+/* Divider */
+hr {
+    margin: 15px 0;
+    border: none;
+    border-top: 2px solid #ddd;
+}
+
+/* Navigation links (same design as home) */
+a {
+    display: inline-block;
+    margin: 8px 6px;
+    padding: 10px 14px;
+    background: #ffffff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Hover effect */
+a:hover {
+    background: #f58220;
+    color: #fff;
+}
+
+/* ABOUT US heading */
+h2 {
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-size: 22px;
+    color: #f58220;   /* theme colour */
+}
+
+/* About Us paragraph */
+p {
+    max-width: 800px;
+    background: #ffffff;
+    padding: 18px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
