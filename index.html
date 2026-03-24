@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <body>
-        <div class = "bg-blur"></div>
-    </body>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <title>Boys Janhit Paksha</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    <img src="images/modi.jpeg">
+
+<body>
+
+<div class="bg-blur"></div>
+
+<div class="form-container">
+    <img src="images/modi.jpeg" class="logo">
+
     <h1>Boys Janhit Paksha</h1>
-    <h2> Please enter the following detail</h2>
-    <form action="/action.php" >
-        <input type="radio" value="Teacher" name ="tr">Other
-        <input type="radio" value="Student" name="tr">Member
-        <br>
-        <input type="text" placeholder= "Name">
-        <br>
+    <h2>Please enter the following detail</h2>
+
+    <form action="home.html">
+        <label>
+            <input type="radio" value="Teacher" name="role"> Teacher
+        </label>
+        <label>
+            <input type="radio" value="Student" name="role"> Member
+        </label>
+
+        <br><br>
+
+        <input type="text" name="name" placeholder="Enter Name" required>
+
+        <br><br>
+
+        <button type="submit">Continue</button>
     </form>
-    <a href="home.html">Continue</a>
-    
-</html>
+</div>
